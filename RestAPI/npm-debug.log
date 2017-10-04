@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'json:server:remote' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 verbose run-script [ 'prejson:server:remote',
+4 verbose run-script   'json:server:remote',
+4 verbose run-script   'postjson:server:remote' ]
+5 info lifecycle jsserver@1.0.0~prejson:server:remote: jsserver@1.0.0
+6 silly lifecycle jsserver@1.0.0~prejson:server:remote: no script for prejson:server:remote, continuing
+7 info lifecycle jsserver@1.0.0~json:server:remote: jsserver@1.0.0
+8 verbose lifecycle jsserver@1.0.0~json:server:remote: unsafe-perm in lifecycle true
+9 verbose lifecycle jsserver@1.0.0~json:server:remote: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\vladm\Desktop\front\RestAPI\node_modules\.bin;C:\Python3\Scripts\;C:\Python3\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Users\vladm\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW;C:\Program Files (x86)\Google\Chrome\Application;C:\Python3;;C:\Program Files\Microsoft VS Code\bin;C:\Users\vladm\AppData\Roaming\npm
+10 verbose lifecycle jsserver@1.0.0~json:server:remote: CWD: C:\Users\vladm\Desktop\front\RestAPI
+11 silly lifecycle jsserver@1.0.0~json:server:remote: Args: [ '/d /s /c',
+11 silly lifecycle   'json-server http://jsonplaceholder.typicode.com/db' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1020:11)
+12 verbose stack     at process.kill (internal/process.js:190:13)
+12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd C:\Users\vladm\Desktop\front\RestAPI
+14 error Windows_NT 10.0.15063
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "json:server:remote"
+16 error node v6.11.3
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

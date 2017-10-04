@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+/*  ---Header---  */
+
 nav.navbar-default {
     border-bottom-color: rgb(83, 85, 88);
     border-bottom-width: 0px;
@@ -29,6 +33,16 @@ nav.navbar-default {
     text-align: center;
 }
 
+.social-img {
+    width:40px;
+    height:40px;
+}
+
+.social a{
+    margin: 15px;
+    padding: 0px;
+}
+
 a.btn {
     background-color: rgb(235, 28, 35);
     border-bottom-color: rgb(235, 28, 35);
@@ -47,84 +61,67 @@ a.btn.btn-info:hover {
     color: rgb(235, 28, 35); 
 }
 
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
-  
-  .mySlides {
-      display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+/*  ---SlideShow---  */
+
+.mySlides {
     width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.mySlide {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    );
+    border-radius: 10px;
+
+}
+
+.trlayer {
+    background-color: rgba(248, 247, 216, 0);
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor:pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slideText {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    );
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    text-align: left;
+    padding-left: 10%
+    
+}
+
+.summaryTitle {
+    font-weight: 700;
+}
+
+.summary {
+    font-size: 24px;
+}
+
+.SlidesContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.fade-in {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }
   
   @-webkit-keyframes fade {
@@ -136,3 +133,127 @@ a.btn.btn-info:hover {
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+
+
+/*  ---About Us---  */
+
+.row {
+    margin: 15px;
+    opacity: 0;
+    transform: translate3d(0px, 100px, 0px);
+    animation-iteration-count: 1;
+    transition: 0.7s ease-out;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(83, 85, 88);
+    font-family: 'Dosis', sans-serif;
+}
+
+.img-fluid {
+    border-radius: 25px;
+    min-width: 160px;
+    height:auto;
+    margin-top: 15px;
+}
+
+.about-copy {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+hr { 
+    margin: 25px;
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  }
+
+.allow-show {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.sign-bot {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    margin: 15px; 
+}
+
+/*  ---Reviews---  */
+
+.reviews-container {
+    position: relative;
+    margin-top: 10%;
+}
+
+/*  ---Form---  */
+
+.i-form {
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    background-color: rgb(244, 244, 244);
+    border-radius: 15px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.check-form {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.radio-form {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.radio-inline {
+    margin-right: 5%;
+}
+
+.check-box {
+    margin-right: 5%;
+}
+
+.form-drop-content {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+#send-btn {
+    background-color: rgb(235, 28, 35);
+    border-bottom-color: rgb(235, 28, 35);
+    border-top-color: rgb(235, 28, 35);
+    border-left-color: rgb(235, 28, 35);
+    border-right-color: rgb(235, 28, 35);
+    
+}
+
+#send-btn:hover {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(235, 28, 35);
+    border-top-color: rgb(235, 28, 35);
+    border-left-color: rgb(235, 28, 35);
+    border-right-color: rgb(235, 28, 35);
+    color: rgb(235, 28, 35); 
+}
+
+.highlight {
+    border-color: rgb(235, 28, 35);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.7px;
+}

@@ -6,6 +6,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="slideshow.js"></script>
+        <script src="fadein.js"></script>
         <link rel="stylesheet" type="text/css" href="mystyle.css">
         <style>
             
@@ -13,7 +14,7 @@
     </head>
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                 <a class="navbar-brand" href="https://www.itechart.com/">
@@ -21,55 +22,109 @@
                 </a>
                 </div>
                 <div class="navbar-header" style="margin-right: 40px;">
-                    <a id="li-navbar" class="navbar-brand" href="#">DQA 2</a>
+                    <a id="li-navbar" class="navbar-brand" href="home.htm">DQA 2</a>
                 </div>
                 <div class="navbar-header" style="padding-top: 10px;">
                     <a href="join.htm" class="btn btn-info btn-lg" role="button">Join Now</a>
                 </div>
-                <ul id="ul-header" class="nav navbar-nav">
-                    <li id="social"><a href="https://vk.com/itechart.group"><img src="images/vk.png" alt="VK" style="width:40px;height:40px;"></a></li>
-                    <li id="social"><a href="https://www.facebook.com/iTechArt.Group/"><img src="images/fb.png" alt="FB" style="width:30px;height:40px;"></a></li>
-                    <li id="social"><a href="https://www.linkedin.com/company/401173/"><img src="images/linked.png" alt="Linked" style="width:40px;height:40px;"></a></li>
-                </ul>
+                <div class="navber-header">
+                    <ul id="ul-header" class="nav navbar-nav">
+                        <li><a class="social" href="https://vk.com/itechart.group" target="_blank"><img class="social-img" src="images/vk.png" alt="VK"></a></li>
+                        <li><a class="social" href="https://www.facebook.com/iTechArt.Group/" target="_blank"><img class="social-img" src="images/fb.png" alt="FB" style="width:30px"></a></li>
+                        <li><a class="social" href="https://www.linkedin.com/company/401173/" target="_blank"><img class="social-img" src="images/linked.png" alt="Linked"></a></li>
+                    </ul>
+                </div>
             </div>
     </nav>
 
     <!-- Slideshow -->
+    <div class="SlidesContainer">
+        <div class="mySlide">
+            <img class="mySlides fade-in" src="images/IMG_0995.jpg">
+            <img class="mySlides fade-in" src="images/IMG_4628.jpg">
+            <img class="mySlides fade-in" src="images/IMG_4631.jpg">
+            <div class="trlayer"></div>
+            <div class="slideText">
+                <h1 class="summaryTitle"><span style="border-bottom: 3px solid rgb(235, 28, 35); padding-bottom: 7px; margin-bottom: 10px">Hey, we're DQA2</span></h1>
+                <div class="summary">And We're Awesome!<br> We love our job. We work as a team.<br> We are strong, positive and friendly<br> collective.</div>
+            </div>
+        </div>
+        
+    </div>
+      
+    <script>
+        var slideIndex = 0;
+        carousel();
+    </script>
+    <br>
+    
+    <!-- About Us -->
 
-    <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="images/c1.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/c2.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="images/c3.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-  
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <p class="h1">About Us:</p>
+    <br>
+
+    <div class="container-fluid" style="background-color: rgb(244,244,244);">
+
+        <!-- 1st -->
+
+        <div class="row" id="row-1">
+            <div class="col-sm-6">
+                <img class = "img-fluid" style="max-width:25%; float:right" src="images/no_bug.png">
+            </div>
+            <div class="col-sm-6">
+                    <h2><span style="border-bottom: 5px solid rgb(235, 28, 35); padding-bottom: 10px;">We Love Our Job!</span></h2>
+                    <br>
+                    <span class="about-copy">In Developers We Trust,<br>The Rest We Test</span>
+            </div>
+        </div>
+        <hr>
+
+        <!-- 2nd -->
+
+        <div class="row" id="row-2">
+            <div class="col-sm-6" style="text-align: right;">
+                    <h2><span style="border-bottom: 5px solid rgb(235, 28, 35); padding-bottom: 10px;">We Love Sports!</span></h2>
+                    <br>
+                    <span class="about-copy">All types. All kinds.<br>We are the team!</span>
+            </div>
+            <div class="col-sm-6">
+                <img class = "img-fluid" style="max-width:30%; float:left;" src="images/sportsicons.jpg">
+            </div>
+        </div>
+        <hr>
+
+        <!-- 3rd -->
+        
+        <div class="row" id="row-3">
+            <div class="col-sm-6">
+                <img class = "img-fluid" style="max-width:30%; float:right" src="images/foodmanager.jpg">
+            </div>
+            <div class="col-sm-6">
+                    <h2><span style="border-bottom: 5px solid rgb(235, 28, 35); padding-bottom: 10px;">Our Food Manager!</span></h2>
+                    <br>
+                    <span class="about-copy">This person knows the best<br>food spots in city</span>
+            </div>
+        </div>
+        <hr>
+
+        <!-- 4th -->
+
+        <div class="row" id="row-4" style="background-color: rgb(244,244,244);">
+            <div class="col-sm-6" style="text-align: right;">
+                <h2><span style="border-bottom: 5px solid rgb(235, 28, 35); padding-bottom: 10px;">We Love Memes!</span></h2>
+                <br>
+                <span class="about-copy">One Does Not Simply<br>Stop Posting Memes</span>
+            </div>
+            <div class="col-sm-6">
+                <img class = "img-fluid" style="max-width:30%; float:left" src="images/fry.png">
+        </div>
     </div>
     <br>
-  
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-    </script>
 
+    <!-- Bot Sign -->
+
+    <p class="sign-bot">© 2017 Vlad Melekh</p>
+    
+           
 </body>
 </html>
