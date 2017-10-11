@@ -46,7 +46,7 @@ function GetData() {
         for (i=0; i<ids.length; i++) {
             $("#" + ids[i]).find("span.user-name").text(getJSONbyID(ids[i], data).name);
             $("#" + ids[i]).find("span.user-comment").text(getJSONbyID(ids[i], data).comment);
-            /*$("#" + ids[i]).find("span.user-likes").text(getJSONbyID(ids[i], data).likes)*/
+            $("#" + ids[i]).find("span.user-likes").text(getJSONbyID(ids[i], data).likes)
             $("#" + ids[i]).find("span.user-experience").text(getJSONbyID(ids[i], data).experience);
             $("#" + ids[i]).find("span.user-love").text(getJSONbyID(ids[i], data).most);
         }
@@ -67,7 +67,7 @@ $(document).ready(function(){
                 var usrradio = CheckRadio();
                 var username = $("#usr").val();
                 var comment = $("#comment").val();
-                var likes = $.map($("input[name='optcheckbox']:checked"), function(c){return c.value;});
+                var likes = ($.map($("input[name='optcheckbox']:checked"), function(c){return c.value;})).join();
                 var exp = $("input[name='optradio']:checked").val();
                 var most = $('#most').find(':selected').val();
 
