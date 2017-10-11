@@ -6,9 +6,6 @@ $(function(){
         DisplayElementInViewport($('#row-2'), 'allow-show');
         DisplayElementInViewport($('#row-3'), 'allow-show');
         DisplayElementInViewport($('#row-4'), 'allow-show');
-
-        
-        
     });
 
     function DisplayElementInViewport(element, newClass) {
