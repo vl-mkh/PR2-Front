@@ -10,6 +10,10 @@ body {
     
   }
 
+span {
+    word-wrap: break-word;
+}  
+
 /*  ---Header---  */
 
 nav.navbar-default {
