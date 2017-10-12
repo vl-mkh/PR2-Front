@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+body {
+    background-image: url(images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    
+  }
+
 /*  ---Header---  */
 
 nav.navbar-default {
@@ -10,6 +20,7 @@ nav.navbar-default {
     padding-top: 20px;
     padding-right: 0px;
     margin-bottom: 0px;
+    background-color: rgb(229, 235, 241);
 }
 
 #li-navbar {
@@ -198,12 +209,17 @@ hr {
 
 /*  ---Form---  */
 
+.form-background {
+    background-color: rgb(255, 255, 255);
+}
+
 .i-form {
     width: 600px;
     padding: 30px;
     margin: auto;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(229, 235, 241);
     border-radius: 15px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 }
 
 .form-group {
@@ -265,6 +281,7 @@ hr {
     width: 100%;
     height: 350px;
     margin: 2% auto;
+
 }
 .swiper-slide {
     margin: 10px;
@@ -272,11 +289,13 @@ hr {
 .swiper-slide-container {
     text-align: center;
     font-size: 18px;
-    background: rgb(244, 244, 244);
+    background: rgb(229, 235, 241);
     height:100%;
-    max-width: 450px;
+    max-width: 400px;
     margin:auto;
+    margin-top: 5%;
     border-radius: 5px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
         
 }
 
