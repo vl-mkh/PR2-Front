@@ -21,7 +21,7 @@ function CheckRadio() {
 };
 
 function GetData() {
-    $.get("http://localhost:3000/posts/?_sort=id&_order=desc&_limit=10", function(data){
+    $.get("http://192.168.13.229:3000/posts/?_sort=id&_order=desc&_limit=10", function(data){
         msg = data;
         var swipercontainers = $(".swiper-slide-container");
         
@@ -72,7 +72,7 @@ $(document).ready(function(){
                 var most = $('#most').find(':selected').val();
 
                 if (usrname && usrcomment && usrradio) {
-                    $.post("http://localhost:3000/posts",
+                    $.post("http://192.168.13.229:3000/posts",
                         {
                             "name": username,
                             "comment": comment,
