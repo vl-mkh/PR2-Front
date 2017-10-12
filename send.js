@@ -5,7 +5,7 @@ function CheckCommentLength(text) {
     } else {
         return new_text;
     }
-}
+};
 
 function CheckNameLength(text) {
     var new_text = text.trim()
@@ -14,7 +14,34 @@ function CheckNameLength(text) {
     } else {
         return new_text;
     }
-}
+};
+
+function CheckLikeLength(text) {
+    var new_text = text.trim()
+    if (new_text.length > 34) {
+        return new_text.slice(0, 33);
+    } else {
+        return new_text;
+    }
+};
+
+function CheckExpLength(text) {
+    var new_text = text.trim()
+    if (new_text.length > 16) {
+        return new_text.slice(0, 15);
+    } else {
+        return new_text;
+    }
+};
+
+function CheckLoveLength(text) {
+    var new_text = text.trim()
+    if (new_text.length > 27) {
+        return new_text.slice(0, 26);
+    } else {
+        return new_text;
+    }
+};
 
 function CheckText(reqclass) {
     if ($.trim($(reqclass).val()).length == 0) {
@@ -64,9 +91,9 @@ function GetData() {
         for (i=0; i<ids.length; i++) {
             $("#" + ids[i]).find("span.user-name").text(CheckNameLength(getJSONbyID(ids[i], data).name));
             $("#" + ids[i]).find("span.user-comment").text(CheckCommentLength(getJSONbyID(ids[i], data).comment));
-            $("#" + ids[i]).find("span.user-likes").text(getJSONbyID(ids[i], data).likes)
-            $("#" + ids[i]).find("span.user-experience").text(getJSONbyID(ids[i], data).experience);
-            $("#" + ids[i]).find("span.user-love").text(getJSONbyID(ids[i], data).most);
+            $("#" + ids[i]).find("span.user-likes").text(CheckLikeLength(getJSONbyID(ids[i], data).likes))
+            $("#" + ids[i]).find("span.user-experience").text(CheckExpLength(getJSONbyID(ids[i], data).experience));
+            $("#" + ids[i]).find("span.user-love").text(CheckLoveLength(getJSONbyID(ids[i], data).most));
         }
         
         console.log(data);
