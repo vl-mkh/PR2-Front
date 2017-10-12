@@ -5,7 +5,7 @@ $(document).ready(function (){
         slidesPerView: 3,
         centeredSlides: true,
         paginationClickable: true,
-        spaceBetween: 17
+        spaceBetween: 10
       });
 
   })
